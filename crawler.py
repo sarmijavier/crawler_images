@@ -69,8 +69,8 @@ if __name__ == '__main__':
 	print('''
 	Welcome to the crawler!
 	Please make sure to add the next arguments as the example:
-	python main.py https://urltocrawl how_many_pages_to_crawl
-	https://www.davivienda.com/wps/portal/personas/nuevo', 3
+	python crawler.py https://urltocrawl how_many_pages_to_crawl
+	python crawler.py https://www.davivienda.com/wps/portal/personas/nuevo', 3
 	'''
 	)
 
