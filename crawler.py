@@ -70,7 +70,7 @@ if __name__ == '__main__':
 	Welcome to the crawler!
 	Please make sure to add the next arguments as the example:
 	python crawler.py https://urltocrawl how_many_pages_to_crawl
-	python crawler.py https://www.davivienda.com/wps/portal/personas/nuevo', 3
+	python crawler.py https://www.davivienda.com/wps/portal/personas/nuevo' 3
 	'''
 	)
 
@@ -78,7 +78,6 @@ if __name__ == '__main__':
 	if len(arguments) == 3:	
 		url = arguments[1]
 		depth = abs(int(arguments[2]))
-		import pdb ; pdb.set_trace()
 		get_page(url, depth)
 	else:
 		print('please make sure to follow the instructions above')
