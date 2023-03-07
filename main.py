@@ -19,7 +19,7 @@ def get_page(url: str, depth: int) -> None:
 	"""
 
 	response = http.request('GET', url)
-	soup = BeautifulSoup(response.data)
+	soup = BeautifulSoup(response.data, 'html.parser')
 	links = get_links_to_pages(soup)
 	images = get_url_images(soup)
 	count_depth = 0
@@ -38,7 +38,7 @@ def get_page(url: str, depth: int) -> None:
 
 	for i in range(depth - 1):
 		response = http.request('GET', f'{url}{links[i]}')
-		soup = BeautifulSoup(response.data)
+		soup = BeautifulSoup(response.data, 'html.parser')
 		links_page = get_links_to_pages(soup)
 		images_page = get_url_images(soup)
 		count_depth = count_depth + 1
@@ -77,8 +77,9 @@ if __name__ == '__main__':
 	arguments = sys.argv
 	if len(arguments) == 3:	
 		url = arguments[1]
-		depth = int(arguments[2])
+		depth = abs(int(arguments[2]))
+		import pdb ; pdb.set_trace()
 		get_page(url, depth)
-	
-	print('please make sure to follow the instructions above')
+	else:
+		print('please make sure to follow the instructions above')
     
