@@ -1,0 +1,26 @@
+{
+    "results": [
+        {
+            "imageUrl": "url/PersonasDaviviendaNewTheme/resources/img/iconos/loadingScreenIcon.gif",
+            "sourceUrl": "https://www.davivienda.com/wps/portal/personas/nuevo",
+            "depth": 0
+        },
+        [
+            {
+                "imageUrl": "https://www.davivienda.com/wps/portal/personas/nuevo/PersonasDaviviendaNewTheme/resources/img/iconos/loadingScreenIcon.gif",
+                "sourceUrl": "https://www.davivienda.com/wps/portal/personas/nuevo#",
+                "depth": 1
+            },
+            {
+                "imageUrl": "https://www.davivienda.com/wps/portal/personas/nuevo/PersonasDaviviendaNewTheme/resources/img/iconos/loadingScreenIcon.gif",
+                "sourceUrl": "https://www.davivienda.com/wps/portal/personas/nuevo/wps/portal/personas/nuevo",
+                "depth": 2
+            },
+            {
+                "imageUrl": "https://www.davivienda.com/wps/portal/personas/nuevo/PersonasDaviviendaNewTheme/resources/img/iconos/loadingScreenIcon.gif",
+                "sourceUrl": "https://www.davivienda.com/wps/portal/personas/nuevo#",
+                "depth": 3
+            }
+        ]
+    ]
+}
